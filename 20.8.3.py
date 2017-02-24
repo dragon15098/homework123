@@ -9,7 +9,7 @@ for i in range(len(text)):
         wordcount[text[i]] = wordcount[text[i]] + 1
 print("Ket Qua")
 print("====================================")
-for key, value in wordcount.items():
+for key, value in sorted(wordcount.items()):
        if(value > 0):
            print(key + "\t\t" , value)
 
