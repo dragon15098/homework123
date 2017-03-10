@@ -82,6 +82,7 @@ class Map:
                 for x in range(self.weight):
                     screen.blit(bg_image, (x * SQUARE_SIZE, y * SQUARE_SIZE))
             if (self.win(self.box.x, self.box.y, self.gate.x, self.gate.y)):
+                done = True
                 screen.blit(win_image, (100, 100))
             pygame.display.flip()
 
